@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="MatchingGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MatchingGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="ButtonStyle">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#FF292993" />
+            <Setter Property="HorizontalAlignment"  Value="Center"/>
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="Blue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <RelativePanel>
+            <Button Visibility="Collapsed" RelativePanel.AlignLeftWithPanel="True" FontFamily="Segoe MDL2 Assets" Content="&#xE0C4;" FontSize="24" Foreground="White" Name="BackButton" Click="BackButton_Click" />
+        </RelativePanel>
+
+        <Frame Name="MyFrame" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level1Button"  Content="Level 0" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level1RatingTextBlock" Style="{StaticResource TextStyle}" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level2Button"  Content="Level 1" Style="{StaticResource ButtonStyle}" Click="Level2Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level2RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level3Button"  Content="Level 2" Style="{StaticResource ButtonStyle}" Click="Level3Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level3RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level4Button"  Content="Level 3" Style="{StaticResource ButtonStyle}" Click="Level4Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level4RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level5Button"  Content="Level 4" Style="{StaticResource ButtonStyle}" Click="Level5Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level5RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level6Button"  Content="Level 5" Style="{StaticResource ButtonStyle}" Click="Level6Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level6RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level7Button"  Content="Level 6" Style="{StaticResource ButtonStyle}" Click="Level7Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level7RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level8Button"  Content="Level 7" Style="{StaticResource ButtonStyle}" Click="Level8Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level8RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level9Button"  Content="Level 8" Style="{StaticResource ButtonStyle}" Click="Level9Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level9RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level10Button"  Content="Level 9" Style="{StaticResource ButtonStyle}" Click="Level10Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level10RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level11Button"  Content="Level 10" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level11RatingTextBlock" Style="{StaticResource TextStyle}" />
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level12Button"  Content="Level 11" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level12RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level13Button"  Content="Level 12" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level13RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level14Button"  Content="Level 13" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level14RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level15Button"  Content="Level 14" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level15RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Level16Button"  Content="Level 15" Style="{StaticResource ButtonStyle}" Click="Level1Button_Click"  />
+                    <TextBlock Text="Ratings: " Name="Level16RatingTextBlock" Style="{StaticResource TextStyle}"/>
+                </StackPanel>
+
+            </Grid>    
+        </Frame>
+        
+        
+    </Grid>
+</Page>
